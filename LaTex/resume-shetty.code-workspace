@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../TUM/Master_Thesis/01_Organisation/master-thesis-abhijeeth"
+		},
+		{
+			"name": "tailsizing",
+			"path": "../../TUM/Master_Thesis/03_Tail_Sizing/tailsizing"
+		}
+	],
+	"settings": {
+		"github.copilot.enable": {
+			"latex": false
+		}
+	}
+}

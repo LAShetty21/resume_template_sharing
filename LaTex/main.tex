@@ -1,0 +1,111 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontsize}
+\usepackage{graphicx}
+
+\geometry{
+    left = 24pt,
+    right = 24pt,
+    top = 24pt,
+    bottom = 16pt,
+}
+
+\definecolor{myBackground}{HTML}{FDFDFD}
+\definecolor{myText}{HTML}{494949}
+\definecolor{myHeading}{HTML}{070707}
+
+\setstretch{1.15}
+
+\pagecolor{myBackground}
+\color{myText}
+
+\setmainfont{Mulish}
+\newfontface\semibold{Mulish-SemiBold}
+\newcommand{\textsb}[1]{{\semibold#1}}
+
+\titleformat{\section}{
+    \color{myHeading}
+    \fontsize{14pt}{8pt}\selectfont\bfseries
+}{}{0em}{}
+
+
+% Create a command: \resumeEntryTwoLine{Start Date}{End Date}{Content}
+\newcommand{\resumeEntryTwoLine}[3]{
+    \noindent
+    % Column 1: Date or Skill Category
+    \begin{minipage}[t]{95pt}
+        \vspace{-5.25pt} % Forces the anchor to the absolute top
+        \fontsize{9pt}{12pt} \renewcommand{\arraystretch}{1.25}
+        \begin{tabular}[t]{@{}l@{}}
+            #1 \\ 
+            #2       
+        \end{tabular}
+    \end{minipage}%
+    % Column 2: Content
+    \begin{minipage}[t]{\dimexpr\textwidth-95pt\relax}
+        \vspace{0pt} % Forces the anchor to the absolute top
+        #3
+    \end{minipage}
+    \vspace{6pt}
+}
+
+% No author/title blocks needed for a standard resume layout
+\begin{document}
+
+
+\noindent {\color{myHeading} \fontsize{18pt}{22pt}\selectfont \bfseries {YOUR NAME}} \\ [8pt] 
+\noindent {\fontsize{12pt}{16pt} \selectfont {Your Full Name}} \\ [8pt]
+\noindent {\small \selectfont{Born on 1st April 2000 in City, Country}} \\ [8pt]
+\noindent \small \href{mailto:abc@gmail.com}{abc@gmail.com}  \hfill \href{https://www.linkedin.com/in/johndoe}{abc@linkedin.com} \hfill  +1 (234) 5678901
+\vspace{8pt}
+\rule{\linewidth}{0.4pt}
+
+\fontsize{12pt}{14pt}\color{myText}\selectfont{
+    In two or three sentences tailor how you will be a better fit to the job role. Change it for every specific application, use this to highlight your application to make your CV perfect for the opening. Dont use platitudes and generalisations like `Communicative engineer with a strong team spirit looking for career oppurtunities in the automotive industry'. 
+
+}
+
+
+\input{education.tex}
+\input{experience.tex}
+\input{projects.tex}
+\input{skills.tex}
+\input{intrests.tex}
+
+\vspace{30pt} % Overall space from the content above
+
+
+% --- THE SIGNATURE AREA ---
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+    % 1. For Digital: Uncomment the line below
+    \includegraphics[height=50pt]{dummy_sign.png}
+
+    
+    % 2. For Hand-signing: Use a "Phantom" box to hold the height
+    % \vphantom{\rule{0pt}{35pt}} % Keeps the same height as the image version
+    
+    % \rule{150pt}{0.5pt} \\ % The Line
+    % \textsb{Your Full Name} \\
+    % \small (Signature)
+
+    \vspace{-10pt} % Space between Signature and Date
+
+    % --- Date Line & Today ---
+    \rule{150pt}{0.5pt} \\
+    \textsb{Place | \today} 
+\end{minipage}
+
+
+
+\end{document}

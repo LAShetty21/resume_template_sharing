@@ -1,0 +1,49 @@
+{
+    "cSpell.words": [
+        "minipage"
+    ],
+
+    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/Applications/Generic",
+
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+
+    "latex-workshop.latex.tools": [
+        {
+            "name": "custom-xelatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdfxe", 
+                "-outdir=%WORKSPACE_FOLDER%/Applications/Generic",
+                "-jobname=%DOCFILE%",
+                "%DOC%"
+            ]
+        }
+    ],
+
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "Custom Build (With Jobname)",
+            "tools": [
+                "custom-xelatexmk"
+            ]
+        }
+    ],
+
+    
+    
+    "latex-workshop.view.pdf.viewer": "tab",
+    "files.exclude": {
+        "Output/**/*.aux": true,
+        "Output/**/*.fdb_latexmk": true,
+        "Output/**/*.fls": true,
+        "Output/**/*.log": true,
+        "Output/**/*.out": true,
+        "Output/**/*.synctex.gz": true,
+        "Output/**/*.xdv": true
+    } 
+    
+
+}

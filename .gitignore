@@ -1,0 +1,11 @@
+# Ignore all LaTeX auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+
+# Ignore the entire Output folder
+Output/

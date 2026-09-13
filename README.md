@@ -1,4 +1,4 @@
-# resume Template
+# LATEX Resume Template
 
 
 This is a template for a basic resume in Latex. This has been created for a technical resume for job applications in Germany. Its a simple editable, Latex template that you can easily beautify with your own ideas or using ChatGPT's suggestions. The template uses a free to use google font called "Mulish". This font library has also been included in the Git Repo. You might have to install the font the first time you run it, however as far as I know it is not necessary. But if you run into error's maybe this is something worth checking. 
